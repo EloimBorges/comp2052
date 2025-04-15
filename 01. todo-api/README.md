@@ -45,7 +45,7 @@ todo-api/
 ### Clona el repositorio:
 
 ```plaintext
-git clone https://github.com/tu-usuario/comp2052.git
+<!-- git clone https://github.com/tu-usuario/comp2052.git        ¿Errors?-->
 cd todo-api
 ```
 
