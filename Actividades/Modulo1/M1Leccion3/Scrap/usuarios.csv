@@ -1,0 +1,3 @@
+id,nombre,correo,roles
+1,Ana López,ana.lopez@example.com,cliente
+2,Carlos Ruiz,carlos.ruiz@example.com,admin;editor3

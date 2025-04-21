@@ -1,0 +1,20 @@
+Modulo 2 Lec 2
+Actividad de la Lección
+En esta actividad, los estudiantes pondrán en práctica lo aprendido sobre manejo y validación de formularios en Flask. El enfoque será crear formularios requeridos para el proyecto Capstone, validarlos y proporcionar retroalimentación al usuario. Esto les ayudará a integrar formularios en sus aplicaciones de manera eficiente y profesional.
+Actividad
+1.	Ejercicio práctico:
+•	Crear un formulario Flask con WTForms para registrar usuarios, utiliza el ejemplo provisto en clase profesor o el código que se encuentra en el respositorio de la clase (https://github.com/javierdastas/comp2052).
+•	Validar los siguientes campos:
+•	Nombre: Obligatorio, mínimo 3 caracteres.
+•	Correo: Obligatorio, formato de correo.
+•	Contraseña: Obligatoria, mínimo 6 caracteres.
+•	Proporcionar mensajes de error personalizados.
+1.	Diseño de Formularios para el Proyecto Capstone:
+•	Diseñar los formularios necesarios para el proyecto Capstone.
+•	Proporcionar una lista de validaciones necesarias para cada formulario.
+1.	Entrega:
+•	Subir el código del servidor Flask con tus formularios implementados a tu repositorio en Github.
+•	Desarrolla un documento en formato PDF que incluya:
+•	Capturas de pantallas de las pruebas realizadas a tu aplicación de Back-end.
+•	Incluye la dirección de tu Github que incluye copia de tu código.
+

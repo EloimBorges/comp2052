@@ -1,0 +1,22 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "Ana Rivera Lopez",
+            "correo": "an.rlopez@example.com",
+            "roles": [
+                "cliente"
+            ]
+        }
+        
+    ],
+    "productos": [
+        {
+            "id": 80,
+            "nombre": "Nvidia RTX 5080",
+            "precio": 999.75,
+            "stock": 5,
+            "categoria": "GPU"
+        }
+    ]
+}

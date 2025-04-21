@@ -1,0 +1,14 @@
+Modulo 2 Lec 1
+La actividad de esta lección está diseñada para que apliques los conceptos aprendidos sobre sistemas de plantillas Front-End con Flask. Crearás una aplicación básica que utiliza plantillas HTML dinámicas para mostrar datos provenientes del Back-End. Esta práctica te permitirá entender la importancia de la separación entre la capa lógica y la capa de presentación, y cómo estructurar plantillas utilizando la herencia de Jinja2. Al completar la actividad, habrás dado los primeros pasos en el diseño de plantillas personalizadas para proyectos más avanzados, como tu proyecto capstone.
+
+1.	Configura un proyecto Flask de tu creatividad en tu máquina siguiendo la estructura mostrada en clase y la lección.
+2.	Utiliza los ejemplos que el profesor ha provisto en clase o el repositorio de la clase (https://github.com/javierdastas/comp2052)
+3.	Crea una plantilla base para una aplicación de tu creación.
+4.	Desarrolla al menos dos plantillas específicas utilizando datos dinámicos, como listas o tablas.
+5.	Usa herencia de plantillas para organizar el diseño, incluye una página principal y desde ella incluye el contenido de dos páginas adicionales.
+6.	Reflexiona sobre cómo la separación entre Back-End y Front-End mejora la claridad y escalabilidad de tu proyecto.
+7.	Sube tu trabajo en GITHUB.
+8.	Desarrolla un documento en formato PDF documentando tu aplicación.
+9.	Incluye en el documento capturas de pantalla de pruebas. 
+10.	Explica brevemente cada pantalla.
+11.	Incluye el enlace de tu Github en el documento.

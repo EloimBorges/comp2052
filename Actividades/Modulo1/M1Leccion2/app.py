@@ -1,3 +1,7 @@
+# Eloim N. Borges Millete
+# R00572231
+# COMP 2052
+
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)

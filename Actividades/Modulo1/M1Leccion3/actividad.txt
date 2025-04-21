@@ -1,0 +1,14 @@
+En esta actividad, los estudiantes aplicarán los conceptos aprendidos sobre la manipulación de datos y la configuración de respuestas JSON en Flask. El enfoque es desarrollar habilidades prácticas para diseñar estructuras de datos, leer y validar datos JSON, y configurar rutas en un servidor Flask funcional.
+Actividad
+•	Ejercicio práctico:
+•	Crear un servidor Flask con las siguientes rutas:
+•	GET /info: Devuelve información general sobre el sistema en formato JSON.
+•	POST /crear_usuario: Recibe datos de un usuario (nombre y correo) y valida que ambos datos están presentes.
+•	GET /usuarios: Devuelve una lista de usuarios almacenados en memoria (diccionario o lista).
+•	Asegurarse de manejar errores adecuadamente y devolver mensajes claros.
+•	Propuesta de estructura de datos:
+•	Diseñar la estructura de datos para una aplicación que gestione productos y usuarios.
+•	Subir la propuesta escrita en formato JSON.
+•	Entrega:
+•	Subir el código del servidor Flask junto con la estructura de datos propuesta en la plataforma del curso.
+•	Subir el código del trabajo a GitHub.
