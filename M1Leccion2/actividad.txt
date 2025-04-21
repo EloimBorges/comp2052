@@ -1,0 +1,16 @@
+En esta actividad, pondrás en práctica los conceptos aprendidos sobre arquitectura Cliente/Servidor, REST APIs y el diseño de endpoints. El enfoque es aplicar estos conocimientos mediante la implementación de un servidor Flask funcional y el diseño de un diagrama de arquitectura para el proyecto Capstone. Esta actividad te ayudará a visualizar la estructura de tus proyectos y a comprender cómo interactúan los diferentes componentes de un sistema.
+Actividad
+1.	Ejercicio práctico:
+•	Crear un servidor Flask con dos rutas:
+•	GET /info: Devuelve información básica sobre la aplicación.
+•	POST /mensaje: Recibe un mensaje en formato JSON y devuelve una respuesta personalizada.
+•	Probar las rutas con Visual Studio Code (REST Cliente), Postman o curl.
+
+2.	Diagrama de arquitectura:
+•	Diseñar un diagrama básico para el proyecto Capstone considerando:
+•	Cliente, servidor y base de datos.
+•	Rutas principales necesarias.
+•	Subir el diagrama junto con el código Flask.
+
+3.	Entrega:
+•	Subir el código del servidor Flask y el diagrama en la plataforma de GitHub.
