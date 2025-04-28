@@ -1,34 +1,31 @@
 {% extends "base.html" %}
+
 <!-- Indica que esta plantilla hereda la estructura de base.html -->
-
 {% block content %}
-<!-- Contenido a ser insertado en el lugar de {% block content %} en base.html -->
+ <!-- Contenido a ser insertado en el lugar de {% block content %} en base.html -->
 
-  <h2 class="title">{{ data.title }}</h2>
-  <!-- Muestra el título dinámico que viene desde el servidor (app.py) -->
-
+ <h2 class="title">{{ data.title }}</h2>
   <p>{{ data.message }}</p>
   <!-- Muestra un mensaje dinámico recibido desde el back-end-->
 
-  <form action="#" method="POST" class="process-form"> 
-    <!-- Inicio de un formulario con estilo de la clase process-form -->
-  
+
+  <form action="#" method="POST" class="process-form">
     <input type="text" id="username" name="username" placeholder="Nombre de usuario" required />
+
     <input type="email" id="email" name="email" placeholder="Correo electrónico" required />
+
     <input type="password" id="password" name="password" placeholder="Contraseña" required />
+
     <button type="submit" class="btn btn-primary">Registrarse</button>
-  
   </form>
 
   <h3>Lista de Tareas</h3>
-
   <ul>
     {% for tarea in data.tareas %}
       <li>{{ tarea }}</li>
     {% endfor %}
-    <!-- Bucle for de Jinja2: Recorre cada elemento de la lista data.tareas y lo muestra como un <li> -->
   </ul>
+  <!-- Bucle for de Jinja2: Recorre cada elemento de la lista data.tareas y lo muestra como un <li> -->
 
   <p>¿Ya tienes una cuenta? <a href="#">Iniciar sesión</a></p>
-
 {% endblock %}

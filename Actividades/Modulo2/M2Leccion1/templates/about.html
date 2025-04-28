@@ -1,18 +1,13 @@
 {% extends "base.html" %}
-<!-- Indica que esta plantilla hereda la estructura de base.html -->
 
 {% block content %}
-<!-- Contenido a ser insertado en el lugar de {% block content %} en base.html -->
-
   <h2 class="title">{{ data.title }}</h2>
-  <!-- Muestra el título dinámico que viene desde el servidor (app.py) -->
-
   <p>{{ data.descripcion }}</p>
-  <!-- Muestra una descripción dinámica que también viene desde el servidor -->
 
-  <p>Esta aplicación ha sido creada para demostrar el uso de <strong>Flask</strong> y <strong>Jinja2</strong> en el desar
 
-  <p>Aprendimos a separar la lógica del back-end de la presentación del front-end usando un sistema de plantillas.</p>
+  <p>Esta aplicación ha sido creada para demostrar el uso de <strong>Flask</strong> y <strong>Jinja2</strong> en el desarrollo de aplicaciones web dinámicas.</p>
 
-  <p>El objetivo es facilitar la escalabilidad y el mantenimiento de los proyectos.</p>
+  <p>Se aprendio a separar la lógica del back-end de la presentación del front-end usando un sistema de plantillas.</p>
+
+  <p>Con el objetivo es facilitar la escalabilidad y el mantenimiento de los proyectos.</p>
 {% endblock %}

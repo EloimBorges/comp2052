@@ -7,7 +7,6 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
-
 def index():
     data = {
         "title": "Pagina Principal",
@@ -15,10 +14,8 @@ def index():
         "tareas": ["Completar Registro", "Subir Foto de Perfil", "Verificar Correo"]
     }
     # Crea un diccionario llamado data que contiene: un título, un mensaje, una lista.
-
     return render_template('index.html', data=data)
-    # Renderiza la plantilla index.html, enviando el diccionario data .
-
+    # Renderiza la plantilla index.html, enviando el diccionario data
 
 @app.route('/about')
 def about():
