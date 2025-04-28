@@ -9,10 +9,10 @@ Actividad
 •	Correo: Obligatorio, formato de correo.
 •	Contraseña: Obligatoria, mínimo 6 caracteres.
 •	Proporcionar mensajes de error personalizados.
-1.	Diseño de Formularios para el Proyecto Capstone:
+2.	Diseño de Formularios para el Proyecto Capstone:
 •	Diseñar los formularios necesarios para el proyecto Capstone.
 •	Proporcionar una lista de validaciones necesarias para cada formulario.
-1.	Entrega:
+3.	Entrega:
 •	Subir el código del servidor Flask con tus formularios implementados a tu repositorio en Github.
 •	Desarrolla un documento en formato PDF que incluya:
 •	Capturas de pantallas de las pruebas realizadas a tu aplicación de Back-end.

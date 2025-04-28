@@ -33,9 +33,9 @@ def home():
 @app.route("/info", methods=["GET"])
 def info():
     return jsonify({
-        "sistema": "Capstone: Gestión de Usuarios y Productos",
+        "sistema": "Capstone: Gestion de Usuarios y Productos",
         "version": "0.5 Gamma",
-        "Descripcion": "Aplicar los conceptos aprendidos sobre la manipulación de datos"
+        "Descripcion": "Aplicar los conceptos aprendidos sobre la manipulacion de datos"
     })
 
 # Ruta POST /crear_usuario
