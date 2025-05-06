@@ -2,9 +2,9 @@
 
 <!-- Indica que esta plantilla hereda la estructura de base.html -->
 {% block content %}
- <!-- Contenido a ser insertado en el lugar de {% block content %} en base.html -->
+  <!-- Contenido a ser insertado en el lugar de block content en el base -->
 
- <h2 class="title">{{ data.title }}</h2>
+  <h2 class="title">{{ data.title }}</h2>
   <p>{{ data.message }}</p>
   <!-- Muestra un mensaje dinámico recibido desde el back-end-->
 
@@ -28,4 +28,5 @@
   <!-- Bucle for de Jinja2: Recorre cada elemento de la lista data.tareas y lo muestra como un <li> -->
 
   <p>¿Ya tienes una cuenta? <a href="#">Iniciar sesión</a></p>
+
 {% endblock %}
