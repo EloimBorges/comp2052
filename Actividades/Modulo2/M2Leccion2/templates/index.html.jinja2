@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block content %}
+<div>
+  <h1 class="title">Login Form Validation</h1>
+  
+  <form method="POST" action="/register" class="process-form" novalidate> 
+    {#no validate añadido para poder mostrar los mensajes customizados en vez de los default#}
+    {{ form.hidden_tag() }}
+
+    {{ form.nombre.label }}
+    {{ form.nombre }}
+    {% for error in form.nombre.errors %}
+      <p style="color: red;">{{ error }}</p>
+    {% endfor %}
+
+    {{ form.correo.label }}
+    {{ form.correo }}
+    {% for error in form.correo.errors %}
+      <p style="color: red;">{{ error }}</p>
+    {% endfor %}
+
+    {{ form.contraseña.label }}
+    {{ form.contraseña }}
+    {% for error in form.contraseña.errors %}
+      <p style="color: red;">{{ error }}</p>
+    {% endfor %}
+
+    {{ form.submit(class_="btn btn-primary") }}
+  </form>
+
+
+</div>
+
+{% endblock %}
