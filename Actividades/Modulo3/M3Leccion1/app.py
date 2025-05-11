@@ -9,14 +9,14 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 
-# Simulación de base de datos con hash generado en tiempo real
+# Simulación de base de datos
 usuarios_raw = {
     'admin': {
-        'password': 'admin123',
+        'password': 'supersecretopoderoso',
         'role': 'admin'
     },
     'cliente': {
-        'password': 'cliente123',
+        'password': 'supersecretonormal',
         'role': 'cliente'
     }
 }
@@ -42,7 +42,7 @@ def load_user(user_id):
         return Usuario(user_id)
     return None
 
-# Decorador para rutas exclusivas de admin (sin functools)
+# Decorador para rutas exclusivas de admin
 def solo_admin(funcion):
     def decorador(*args, **kwargs):
         if not current_user.is_authenticated or current_user.role != 'admin':

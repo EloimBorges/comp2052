@@ -1,0 +1,14 @@
+Actividad
+Implementar autenticación básica:
+Crear un servidor Flask con Flask-Login para manejar usuarios autenticados, utiliza el código de ejemplo discutido en clase o el código en el repositorio del curso (https://github.com/javierdastas/comp2052).
+Configurar rutas restringidas para usuarios autenticados.
+Diseño de la funcionalidad de autenticación para la Aplicación:
+Diseñar el flujo de autenticación del proyecto.
+Puedes ver los siguientes ejemplos:
+Flowchart diagram tutorial (user login example)
+Flow chart || Login process flow chart
+Create Login Flowchart using Mindmap
+Crear un esquema de usuario que incluya:
+Nombre de usuario.
+Contraseña (almacenada como hash).
+Rol o permisos.
