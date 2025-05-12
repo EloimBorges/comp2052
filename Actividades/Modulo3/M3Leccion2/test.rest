@@ -1,0 +1,59 @@
+###  Login como admin (pos)
+GET http://localhost:5000/login/pos
+
+### Accede a panel de admin
+GET http://localhost:5000/db_settings
+
+###  Intenta acceder a ruta de otro rol
+GET http://localhost:5000/empleados
+
+###  Accede a inventario
+GET http://localhost:5000/inventario
+
+###  Logout
+GET http://localhost:5000/logout
+
+
+
+###  Login como dueño (fernando)
+GET http://localhost:5000/login/fernando
+
+###  Accede a panel de empleados
+GET http://localhost:5000/empleados
+
+### Fallo de acceso
+GET http://localhost:5000/modificar_inventario
+
+###  Accede a inventario
+GET http://localhost:5000/inventario
+
+###  Logout
+GET http://localhost:5000/logout
+
+
+
+###  Login como supervisor (odalys)
+GET http://localhost:5000/login/odalys
+
+###  Accede a modificar inventario
+GET http://localhost:5000/modificar_inventario
+
+###  Intenta acceder a rutas de otros roles
+GET http://localhost:5000/empleados
+
+###  Logout
+GET http://localhost:5000/logout
+
+
+
+###  Login como empleado
+GET http://localhost:5000/login/kay
+
+###  Accede a caja registradora
+GET http://localhost:5000/caja_registradora
+
+###  Intenta acceder a rutas de otros roles
+GET http://localhost:5000/db_settings
+
+###  Logout
+GET http://localhost:5000/logout

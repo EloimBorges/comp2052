@@ -1,3 +1,7 @@
+# Eloim N. Borges Millete
+# R00572231
+# COMP 2052
+
 from flask import Flask, render_template, request
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
