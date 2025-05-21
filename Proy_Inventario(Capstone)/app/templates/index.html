@@ -1,0 +1,18 @@
+<!-- Modificado para proy -->
+
+
+
+
+
+{% extends "layout.html" %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+<div class="text-center">
+  <h1 class="mt-5">Bienvenido al Gestor de Inventario Personal</h1>
+  {% if current_user.id %}
+  <p class="lead text-muted">Haz clic en "Dashboard" para gestionar tus ítems.</p>
+  {% else %}
+  <p class="lead text-body-secondary">Inicia sesión o regístrate para continuar.</p>
+  {% endif %}
+</div>
+{% endblock %}

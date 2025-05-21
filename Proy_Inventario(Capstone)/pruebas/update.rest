@@ -1,0 +1,13 @@
+###
+PUT http://localhost:5000/items/3
+Content-Type: application/json
+
+{
+  "nombre": "Laptop Dell XPS",
+  "categoria": "Electrónica",
+  "cantidad": 1,
+  "precio_estimado": 1400.00,
+  "ubicacion": "Sala de reuniones",
+  "fecha_adquisicion": "2024-11-01",
+  "owner_id": 1
+}

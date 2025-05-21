@@ -1,0 +1,49 @@
+<!-- NUevo formulario creado para propositos del proyecto final -->
+
+
+
+
+
+{% extends "layout.html" %}
+{% block title %}{{ editar and "Editar Ítem" or "Nuevo Ítem" }}{% endblock %}
+{% block content %}
+<h2 class="mb-4">{{ editar and "Editar Ítem" or "Nuevo Ítem" }}</h2>
+
+<form method="POST" novalidate>
+  {{ form.hidden_tag() }}
+
+  <div class="mb-3">
+    {{ form.nombre.label(class="form-label") }}
+    {{ form.nombre(class="form-control", placeholder="Nombre del ítem") }}
+  </div>
+
+  <div class="mb-3">
+    {{ form.categoria.label(class="form-label") }}
+    {{ form.categoria(class="form-control", placeholder="Categoría") }}
+  </div>
+
+  <div class="mb-3">
+    {{ form.cantidad.label(class="form-label") }}
+    {{ form.cantidad(class="form-control", placeholder="Cantidad") }}
+  </div>
+
+  <div class="mb-3">
+    {{ form.precio_estimado.label(class="form-label") }}
+    {{ form.precio_estimado(class="form-control", placeholder="Precio estimado") }}
+  </div>
+
+  <div class="mb-3">
+    {{ form.ubicacion.label(class="form-label") }}
+    {{ form.ubicacion(class="form-control", placeholder="Ubicación") }}
+  </div>
+
+  <div class="mb-3">
+    {{ form.fecha_adquisicion.label(class="form-label") }}
+    {{ form.fecha_adquisicion(class="form-control") }}
+  </div>
+
+  <div class="mb-3">
+    {{ form.submit(class="btn btn-primary") }}
+  </div>
+</form>
+{% endblock %}

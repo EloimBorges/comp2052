@@ -1,4 +1,0 @@
-### Obtener todos los cursos (GET)
-
-GET http://localhost:5000/cursos
-Content-Type: application/json

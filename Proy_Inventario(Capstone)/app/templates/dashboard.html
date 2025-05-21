@@ -1,0 +1,66 @@
+<!--Formulario alterado para propositos del proyecto final -->
+
+
+
+
+{% extends "layout.html" %}
+{% block title %}Inventario{% endblock %}
+{% block content %}
+<div class="row">
+  <div class="col">
+    <h3>Inventario Personal</h3>
+  </div>
+  <div class="col text-end">
+    {% if current_user.role.name in ['Owner', 'Admin'] %}
+    <a class="btn btn-primary mb-3 me-2" href="{{ url_for('main.crear_item') }}">
+      <i class="bi bi-plus"></i> Nuevo Ítem
+    </a>
+    {% endif %}
+  </div>
+</div>
+
+{% if items %}
+<table class="table table-bordered table-hover">
+  <thead class="table-light">
+    <tr>
+      <th>Nombre</th>
+      <th>Categoría</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+      <th>Ubicación</th>
+      <th>Fecha</th>
+      <th class="text-center">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in items %}
+    <tr>
+      <td>{{ item.nombre }}</td>
+      <td>{{ item.categoria }}</td>
+      <td>{{ item.cantidad }}</td>
+      <td>${{ item.precio_estimado }}</td>
+      <td>{{ item.ubicacion }}</td>
+      <td>{{ item.fecha_adquisicion }}</td>
+      <td class="text-center">
+        {% if current_user.role.name == 'Admin' or item.owner_id == current_user.id %}
+        <a class="btn btn-sm btn-warning" href="{{ url_for('main.editar_item', id=item.id) }}">
+          <i class="bi bi-pencil"></i>
+        </a>
+        <form method="POST" action="{{ url_for('main.eliminar_item', id=item.id) }}" style="display: inline"
+          onsubmit="return confirm('¿Eliminar este ítem?');">
+          <button type="submit" class="btn btn-sm btn-danger">
+            <i class="bi bi-trash"></i>
+          </button>
+        </form>
+        {% else %}
+        <span class="text-muted"><i class="bi bi-lock"></i></span>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p class="text-muted">No hay ítems registrados aún.</p>
+{% endif %}
+{% endblock %}
